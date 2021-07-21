@@ -16,14 +16,19 @@
         <div class="navbar">
             <img src="images/logo.png" class="logo" alt="logo icon">
             <nav>
-                <ul>
+                <ul id="menuList">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Learn from the SPIRIT</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <img src="images/menu.png" class="menu-icon" alt="menu icon">
+            <img 
+                src="images/menu.png" 
+                class="menu-icon" 
+                alt="menu icon"
+                onclick="toggleMenu()"
+            >
         </div>
 
         <!-- Rows -->
@@ -33,7 +38,7 @@
             <!-- column 1 -->
 
             <div class="col-1">
-                <h2>Last Revival <br>Revival from Africa</h2>
+                <h2>Last Revival <br>Spirit from Africa</h2>
                 <h3>It's now time to live the mystery of the revival</h3>
                 <p>In the last days, God says,I will pour out my Spirit on all people.
                     Your sons and daughters will prophesy, your young men will see visions,
@@ -43,7 +48,7 @@
                 <!-- button -->
             
                 <button type="button">
-                    Join community 
+                    Join Us 
                     <img src="images/join.png">
                 </button>
 
@@ -67,6 +72,24 @@
             <img src="images/ig.png" alt="">
         </div>
     </div>
+
+    <!-- Scripts -->
+
+    <script>
+
+        let menuList = document.getElementById('menuList');
+
+        menuList.style.maxHeight = '0px';
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight === '0px') {
+                menuList.style.maxHeight = '150px';
+            }else{
+                menuList.style.maxHeight = '0px';
+            }
+        }
+
+    </script>
     
     
 </body>

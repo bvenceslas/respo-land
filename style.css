@@ -37,6 +37,7 @@
 .menu-icon {
     width: 50px;
     cursor: pointer;
+    display: none;
 }
 
 /* navbar */
@@ -185,4 +186,80 @@ button:hover {
 
 .social-links {
     text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient( #077bbe, #00a2ff);
+        position: absolute;
+        top: 85px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom:50px;
+    }
+
+    .col-2 .controller {
+        width: 77%;
+    }
+
+    .color-box {
+        transform: translateX(100px);
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+    .col-1 h2 {
+        font-size: 35px;
+    }
+
+    .col-1 h3 {
+        font-size: 20px;
+    }
+
+    .col-1 p {
+        font-size: 14px;
+    }
+
+    .col-1 h4 {
+        font-size: 16px;
+    }
+
+    .join-btn img {
+        width: 50px;
+    }
+    
+    
 }
