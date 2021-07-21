@@ -40,6 +40,12 @@
 }
 
 /* navbar */
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
 nav ul li {
     list-style: none;
     display: inline-block;
@@ -167,4 +173,16 @@ button:hover {
     align-items: center;
     color: white;
     cursor: pointer;
+}
+
+/* social links*/
+
+.social-links img {
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
 }
