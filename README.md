@@ -4,6 +4,10 @@ I.F Responsive landing page
 
 The project is public
 
+## Preview
+
+Here is the [live preview](https://bvenceslas.github.io/respo-land/) of this project
+
 ## Built With
 
 - Html
